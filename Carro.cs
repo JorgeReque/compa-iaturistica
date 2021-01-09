@@ -11,13 +11,13 @@ namespace compañia_turistica
 
         private string llanta;
         protected double precioTransporte;
-        public Carro(string _matricula, string _marca, string _modelo, string _color, double _precioTrasporte
+        /*public Carro(string _matricula, string _marca, string _modelo, string _color, double _precioTrasporte
             , string _estadoDeMovimiento, string _estadoVehiculo, string _pasajeros, string _llanta)
         {
             llanta = "numero de llantas: " + 4;
             precioTransporte=50;
             marca = "Mercedes benz";
             modelo ="clase A";
-    }
+    }*/
     }
 }

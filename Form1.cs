@@ -17,4 +17,22 @@ namespace compañia_turistica
             InitializeComponent();
         }
     }
+
+    Vehiculo obj;
+    public bool NewInstance(string instance){
+        if("carro"== instance){
+            obj = new Carro()
+            return true
+        }
+        return false
+    }
+
+    //crear un boton para llamar al metodo 
+    public string crearInstancia(){
+        if(NewInstance("carro")){
+            return "se creo"
+        }
+        return "no se creo"
+    }
+    
 }
