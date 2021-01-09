@@ -15,24 +15,46 @@ namespace compañia_turistica
         public Form1()
         {
             InitializeComponent();
+
+
+        }
+
+
+        Vehiculo obj;
+        public bool NewInstance(string instance)
+        {
+            if ("carro" == instance)
+            {
+                obj = new Carro();
+                return true;
+            }
+            return false;
+        }
+
+        //crear un boton para llamar al metodo 
+        public string crearInstancia()
+        {
+            string tipoVehiculo;
+            if (rbCarro.Checked) { }
+            if (NewInstance(tipoVehiculo))
+            {
+                return "se creo";
+            }
+            return "no se creo";
+        }
+
+        private void btnReservar_Click(object sender, EventArgs e)
+        {
+            string Resultado;
+
+            Resultado = crearInstancia();
+           
+
+            richTexResultado.Text = Resultado;
+
         }
     }
 
-    Vehiculo obj;
-    public bool NewInstance(string instance){
-        if("carro"== instance){
-            obj = new Carro()
-            return true
-        }
-        return false
-    }
-
-    //crear un boton para llamar al metodo 
-    public string crearInstancia(){
-        if(NewInstance("carro")){
-            return "se creo"
-        }
-        return "no se creo"
-    }
+    
     
 }

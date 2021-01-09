@@ -28,33 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnReservar = new System.Windows.Forms.Button();
+            this.richTexResultado = new System.Windows.Forms.RichTextBox();
+            this.rbCarro = new System.Windows.Forms.RadioButton();
+            this.rbHelicoptero = new System.Windows.Forms.RadioButton();
+            this.rbLancha = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // btnReservar
             // 
-            this.groupBox1.Location = new System.Drawing.Point(25, 26);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(327, 127);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Carro";
+            this.btnReservar.Location = new System.Drawing.Point(130, 144);
+            this.btnReservar.Name = "btnReservar";
+            this.btnReservar.Size = new System.Drawing.Size(75, 23);
+            this.btnReservar.TabIndex = 0;
+            this.btnReservar.Text = "Reservar";
+            this.btnReservar.UseVisualStyleBackColor = true;
+            this.btnReservar.Click += new System.EventHandler(this.btnReservar_Click);
+            // 
+            // richTexResultado
+            // 
+            this.richTexResultado.Location = new System.Drawing.Point(256, 107);
+            this.richTexResultado.Name = "richTexResultado";
+            this.richTexResultado.Size = new System.Drawing.Size(158, 96);
+            this.richTexResultado.TabIndex = 1;
+            this.richTexResultado.Text = "";
+            // 
+            // rbCarro
+            // 
+            this.rbCarro.AutoSize = true;
+            this.rbCarro.Location = new System.Drawing.Point(102, 231);
+            this.rbCarro.Name = "rbCarro";
+            this.rbCarro.Size = new System.Drawing.Size(50, 17);
+            this.rbCarro.TabIndex = 2;
+            this.rbCarro.TabStop = true;
+            this.rbCarro.Text = "Carro";
+            this.rbCarro.UseVisualStyleBackColor = true;
+            // 
+            // rbHelicoptero
+            // 
+            this.rbHelicoptero.AutoSize = true;
+            this.rbHelicoptero.Location = new System.Drawing.Point(233, 231);
+            this.rbHelicoptero.Name = "rbHelicoptero";
+            this.rbHelicoptero.Size = new System.Drawing.Size(79, 17);
+            this.rbHelicoptero.TabIndex = 3;
+            this.rbHelicoptero.TabStop = true;
+            this.rbHelicoptero.Text = "Helicoptero";
+            this.rbHelicoptero.UseVisualStyleBackColor = true;
+            // 
+            // rbLancha
+            // 
+            this.rbLancha.AutoSize = true;
+            this.rbLancha.Location = new System.Drawing.Point(344, 231);
+            this.rbLancha.Name = "rbLancha";
+            this.rbLancha.Size = new System.Drawing.Size(61, 17);
+            this.rbLancha.TabIndex = 4;
+            this.rbLancha.TabStop = true;
+            this.rbLancha.Text = "Lancha";
+            this.rbLancha.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 534);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.rbLancha);
+            this.Controls.Add(this.rbHelicoptero);
+            this.Controls.Add(this.rbCarro);
+            this.Controls.Add(this.richTexResultado);
+            this.Controls.Add(this.btnReservar);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnReservar;
+        private System.Windows.Forms.RichTextBox richTexResultado;
+        private System.Windows.Forms.RadioButton rbCarro;
+        private System.Windows.Forms.RadioButton rbHelicoptero;
+        private System.Windows.Forms.RadioButton rbLancha;
     }
 }
 

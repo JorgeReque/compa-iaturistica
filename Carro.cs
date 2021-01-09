@@ -11,6 +11,12 @@ namespace compañia_turistica
 
         private string llanta;
         protected double precioTransporte;
+
+
+        public Carro()
+        {
+
+        }
         /*public Carro(string _matricula, string _marca, string _modelo, string _color, double _precioTrasporte
             , string _estadoDeMovimiento, string _estadoVehiculo, string _pasajeros, string _llanta)
         {

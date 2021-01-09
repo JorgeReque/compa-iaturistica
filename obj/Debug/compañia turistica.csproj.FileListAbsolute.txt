@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\2020-2\POO\PROYECTOS EN GIT BASH\compa-iaturistica\bin\Debug\compañia turistica.exe.config
+C:\Users\HP\Desktop\2020-2\POO\PROYECTOS EN GIT BASH\compa-iaturistica\bin\Debug\compañia turistica.exe
+C:\Users\HP\Desktop\2020-2\POO\PROYECTOS EN GIT BASH\compa-iaturistica\bin\Debug\compañia turistica.pdb
+C:\Users\HP\Desktop\2020-2\POO\PROYECTOS EN GIT BASH\compa-iaturistica\obj\Debug\compañia turistica.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\2020-2\POO\PROYECTOS EN GIT BASH\compa-iaturistica\obj\Debug\compañia_turistica.Form1.resources
+C:\Users\HP\Desktop\2020-2\POO\PROYECTOS EN GIT BASH\compa-iaturistica\obj\Debug\compañia_turistica.Properties.Resources.resources
+C:\Users\HP\Desktop\2020-2\POO\PROYECTOS EN GIT BASH\compa-iaturistica\obj\Debug\compañia turistica.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\2020-2\POO\PROYECTOS EN GIT BASH\compa-iaturistica\obj\Debug\compañia turistica.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\2020-2\POO\PROYECTOS EN GIT BASH\compa-iaturistica\obj\Debug\compañia turistica.exe
+C:\Users\HP\Desktop\2020-2\POO\PROYECTOS EN GIT BASH\compa-iaturistica\obj\Debug\compañia turistica.pdb
