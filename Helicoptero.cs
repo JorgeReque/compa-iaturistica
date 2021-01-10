@@ -11,6 +11,16 @@ namespace compañia_turistica
 
         private string helice;
         protected double precioTransporte;
+
+        public Helicoptero()
+        {
+
+        }
+        public string TipoVehiculo()
+        {
+
+            return "Helicoptero";
+        }
         public Helicoptero(string _matricula, string _marca, string _modelo, string _color, double _precioTrasporte
             , string _estadoDeMovimiento, string _estadoVehiculo, string _pasajeros, string _helice)
         {

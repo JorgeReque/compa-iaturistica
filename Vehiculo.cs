@@ -52,6 +52,12 @@ namespace compañia_turistica
                 +"Estado del vehiculo"+estadoVehiculo;
         }
 
+        
+        public  string TipoVehiculo()
+        {
+
+            return "Carro";
+        }
 
 
     }

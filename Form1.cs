@@ -21,16 +21,18 @@ namespace compañia_turistica
 
 
         Vehiculo obj;
-        public bool NewInstance(string instance)
+        public bool NewInstance(string obCrear)
         {
-            if ("carro" == instance)
+            if ("carro" == obCrear)
             {
                 obj = new Carro();
                 return true;
-            }else if("helicoptero" == instance){
+            }else if("helicoptero" == obCrear)
+            {
                 obj = new Helicoptero();
                 return true;
-            }else if("helicoptero" == instance){
+            }else if("Lancha" == obCrear)
+            {
                 obj = new Lancha();
                 return true;
             }
@@ -48,18 +50,18 @@ namespace compañia_turistica
                 tipoVehiculo="helicoptero";
             }
             if (rbLancha.Checked) {//para el check de lacha 
-                tipoVehiculo="lancha";
+                tipoVehiculo="Lancha";
             }
 
             if( tipoVehiculo == ""){// si no selecciona una opcion
-                return "no se puede crear tu msg"
+                return "NO SE ELIGIO NINGUNA OPCION";
             }
 
             if (NewInstance(tipoVehiculo))
             {
-                return "se creo";
+                return "RESERVA EXITOSA  DE VEHICULO: "+obj.TipoVehiculo();
             }
-            return "no se creo";
+            return "NO SE CREO LA RESERVA ";
         }
 
         private void btnReservar_Click(object sender, EventArgs e)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace compañia_turistica
 {
-    class Carro:Terrestre
+    class Carro : Terrestre
     {
 
         private string llanta;
@@ -16,6 +16,12 @@ namespace compañia_turistica
         public Carro()
         {
 
+        }
+        
+        public  string TipoVehiculo()
+        {
+
+            return "Carro";
         }
         /*public Carro(string _matricula, string _marca, string _modelo, string _color, double _precioTrasporte
             , string _estadoDeMovimiento, string _estadoVehiculo, string _pasajeros, string _llanta)

@@ -20,6 +20,16 @@ namespace compañia_turistica
         //protected string estadoVehiculo = "";
         //protected string pasajeros = "";
         protected double precioTransporte;
+        public Lancha()
+        {
+
+        }
+
+        public string TipoVehiculo()
+        {
+
+            return "Lancha";
+        }
         public Lancha(string _matricula , string _marca,string _modelo,string _color,double _precioTrasporte
             ,string _estadoDeMovimiento,string _estadoVehiculo,string _pasajeros,string _casco)
         {
