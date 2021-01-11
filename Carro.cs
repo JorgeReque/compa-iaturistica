@@ -13,23 +13,31 @@ namespace compañia_turistica
         protected double precioTransporte;
 
 
+        
+        
+        public override string TipoVehiculo
+        {
+
+           get { return "Carro"; }
+        }
         public Carro()
         {
-
-        }
-        
-        public  string TipoVehiculo()
-        {
-
-            return "Carro";
-        }
-        /*public Carro(string _matricula, string _marca, string _modelo, string _color, double _precioTrasporte
-            , string _estadoDeMovimiento, string _estadoVehiculo, string _pasajeros, string _llanta)
-        {
-            llanta = "numero de llantas: " + 4;
-            precioTransporte=50;
+            matricula = "XG11";
             marca = "Mercedes benz";
-            modelo ="clase A";
-    }*/
+            modelo = "Jeep Renegade";
+            llanta = "numero de llantas: " + 4;
+            color = "Rojo";
+            precioTransporte=50;
+            estadoDeMovimiento = "en espera";
+            estadoVehiculo = "apagado";
+             
+    }
+        public string MostrarInfoCoche()
+        {
+            return "Matricula: " + matricula + "//Marca: " + marca + "//Modelo: " + modelo +"//"+
+                llanta+"//Color: " + color+"Precio de transporte: "+precioTransporte
+                + "//Estado de movimiento: " + estadoDeMovimiento
+                + "//Estado del vehiculo" + estadoVehiculo + "//Pasajeros" + pasajeros;
+        }
     }
 }

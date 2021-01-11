@@ -15,7 +15,7 @@ namespace compañia_turistica
            
            protected string estadoDeMovimiento;
            protected string estadoVehiculo="";
-           protected string pasajeros = "";
+           protected string pasajeros = "Ninguno";
 
        
 
@@ -45,19 +45,11 @@ namespace compañia_turistica
             Console.WriteLine(estadoDeMovimiento);
         }
 
-        public string MostrarInfoVehiculo()
-        {
-            return "Matricula: "+matricula+"Marca: "+marca+"Modelo: "+modelo+"Color: "
-                +"Estado de movimiento: "+estadoDeMovimiento
-                +"Estado del vehiculo"+estadoVehiculo;
-        }
 
+
+
+        public virtual string TipoVehiculo { get;}
         
-        public  string TipoVehiculo()
-        {
-
-            return "Carro";
-        }
 
 
     }

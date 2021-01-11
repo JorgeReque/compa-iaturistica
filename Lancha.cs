@@ -20,23 +20,33 @@ namespace compañia_turistica
         //protected string estadoVehiculo = "";
         //protected string pasajeros = "";
         protected double precioTransporte;
+        
+
+        public override string TipoVehiculo
+        {
+
+            get { return "Lancha"; }
+        }
         public Lancha()
         {
-
-        }
-
-        public string TipoVehiculo()
-        {
-
-            return "Lancha";
-        }
-        public Lancha(string _matricula , string _marca,string _modelo,string _color,double _precioTrasporte
-            ,string _estadoDeMovimiento,string _estadoVehiculo,string _pasajeros,string _casco)
-        {
+            matricula = "XE12";
+            marca = "Daemon Yacht";
+            modelo = "Hypalon";
+            color = "azul";
+            precioTransporte = 70;
+            estadoDeMovimiento = "en espera";
+            estadoVehiculo = "Apagado";
             casco = "500 metros cubicos";
 
-            precioTransporte=70;
+            
         }
-        
+        public string MostrarInfoLancha()
+        {
+            return "Matricula: " + matricula + "//Marca: " + marca + "//Modelo: " + modelo + "//" +
+                casco + "//Color: " + color + "//Precio de transporte: " + precioTransporte
+                + "//Estado de movimiento: " + estadoDeMovimiento
+                + "//Estado del vehiculo" + estadoVehiculo + "//Pasajeros" + pasajeros;
+        }
+
     }
 }

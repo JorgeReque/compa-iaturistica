@@ -12,20 +12,31 @@ namespace compañia_turistica
         private string helice;
         protected double precioTransporte;
 
+   
+        public override string TipoVehiculo
+        {
+
+            get { return "Helicoptero"; }
+        }
         public Helicoptero()
         {
-
-        }
-        public string TipoVehiculo()
-        {
-
-            return "Helicoptero";
-        }
-        public Helicoptero(string _matricula, string _marca, string _modelo, string _color, double _precioTrasporte
-            , string _estadoDeMovimiento, string _estadoVehiculo, string _pasajeros, string _helice)
-        {
+            matricula = "XF10";
+            marca = "Agusta Westland AW109 Grand Versace";
+            modelo = "Helicoptero de transporte";
+            color = "verde";
+            precioTransporte = 120;
+            estadoDeMovimiento = "en espera";
+            estadoVehiculo = "Apagado";
             helice ="numero de helices: "+2;
-            precioTransporte=120;
-    }
+           
+        }
+
+        public string MostrarInfoHelicoptero()
+        {
+            return "Matricula: " + matricula + "//Marca: " + marca + "//Modelo: " + modelo + "//" +
+                helice + "//Color: " + color + "//Precio de transporte: " + precioTransporte
+                + "//Estado de movimiento: " + estadoDeMovimiento
+                + "//Estado del vehiculo" + estadoVehiculo + "//Pasajeros" + pasajeros;
+        }
     }
 }

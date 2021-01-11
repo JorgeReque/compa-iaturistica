@@ -15,10 +15,16 @@ namespace compañia_turistica
         public Form1()
         {
             InitializeComponent();
-
+             Carro1 = new Carro();
+            Lancha1 = new Lancha();
+             Helicoptero1 = new Helicoptero();
 
         }
+        //instanciamos para poder guardar la informacion
 
+        Carro Carro1;
+        Lancha Lancha1;
+        Helicoptero Helicoptero1;
 
         Vehiculo obj;
         public bool NewInstance(string obCrear)
@@ -59,7 +65,7 @@ namespace compañia_turistica
 
             if (NewInstance(tipoVehiculo))
             {
-                return "RESERVA EXITOSA  DE VEHICULO: "+obj.TipoVehiculo();
+                return "RESERVA EXITOSA DE VEHICULO: "+obj.TipoVehiculo;
             }
             return "NO SE CREO LA RESERVA ";
         }
@@ -68,7 +74,29 @@ namespace compañia_turistica
         {
             string Resultado;
             Resultado = crearInstancia();
-            richTexResultado.Text = Resultado;
+            tbReserva.Text = Resultado;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnInfoCarro_Click(object sender, EventArgs e)
+        {
+
+            rtInfoCarro.Text = Carro1.MostrarInfoCoche();
+
+        }
+
+        private void btnInfoHelicoptero_Click(object sender, EventArgs e)
+        {
+            rtInfoHelicoptero.Text = Helicoptero1.MostrarInfoHelicoptero();
+        }
+
+        private void btnInfoLancha_Click(object sender, EventArgs e)
+        {
+            rtInfoLancha.Text = Lancha1.MostrarInfoLancha();
         }
     }
     
